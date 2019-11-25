@@ -3713,11 +3713,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repo\\ExcelToJson\\ExcelToJson\\ExcelToJson.csproj",
+      "projectUniqueName": "C:\\Repo\\ExcelToJson\\ExcelToJson.csproj",
       "projectName": "ExcelToJson",
-      "projectPath": "C:\\Repo\\ExcelToJson\\ExcelToJson\\ExcelToJson.csproj",
+      "projectPath": "C:\\Repo\\ExcelToJson\\ExcelToJson.csproj",
       "packagesPath": "C:\\Users\\aleksandr.li\\.nuget\\packages\\",
-      "outputPath": "C:\\Repo\\ExcelToJson\\ExcelToJson\\obj\\",
+      "outputPath": "C:\\Repo\\ExcelToJson\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\aleksandr.li\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,6 +1,9 @@
-﻿using OfficeOpenXml;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using OfficeOpenXml;
 using System;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace JsonReplacer
 {
@@ -32,7 +35,7 @@ namespace JsonReplacer
 
                 for (int row = 2; row <= worksheet.Dimension.Rows; row++) {
                     string json = File.ReadAllText(@".\Input\sample.json");
-                    dynamic jsonObj = Newtonsoft.Json.JsonConvert.DeserializeObject(json);
+                    dynamic jsonObj = Newtonsoft.Json.JsonConvert.DeserializeObject(json, typeof(object));
                     string frontOrBackoffice = "";
                     string environment = "";
                     string site = "";
@@ -84,14 +87,22 @@ namespace JsonReplacer
                                 site = value;
                                 jsonObj["parameters"]["contextName"]["value"] = value;
                                 break;
+                            case 13:
+                                jsonObj["parameters"]["emailList"]["value"] = Regex.Replace(value, @"\t|\n|\r", "");
+                                break;
                             default:
+                                
                                 break;
                         }
                     }
                     jsonObj["parameters"]["pingTests"]["value"][0]["webTestId"] = Guid.NewGuid().ToString();
                     jsonObj["parameters"]["pingTests"]["value"][0]["webTestRequestId"] = Guid.NewGuid().ToString();
-                    string output = Newtonsoft.Json.JsonConvert.SerializeObject(jsonObj, Newtonsoft.Json.Formatting.Indented);
-
+                    string output = JsonConvert.SerializeObject(jsonObj, Formatting.Indented);
+                    
+                    output = Regex.Replace(output, @"\\", "");
+                    output = Regex.Replace(output, @"\""\[", "[");
+                    output = Regex.Replace(output, @"\]\""", "]");
+                    output = JValue.Parse(output).ToString(Formatting.Indented);
                     Directory.CreateDirectory($@"{parametersFolderPath}\{environment}\{site}\{frontOrBackoffice}\");
                     File.WriteAllText($@"{parametersFolderPath}\{environment}\{site}\{frontOrBackoffice}\azure-monitor-deploy.parameters.json", output);
                     Console.WriteLine($@"Json successfully generated in {parametersFolderPath}\{environment}\{site}\{frontOrBackoffice}\azure-monitor-deploy.parameters.json");

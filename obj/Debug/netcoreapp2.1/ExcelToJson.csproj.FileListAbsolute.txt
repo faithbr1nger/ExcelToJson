@@ -18,3 +18,12 @@ C:\Repo\ExcelToJson\ExcelToJson\obj\Debug\netcoreapp2.1\ExcelToJson.AssemblyInfo
 C:\Repo\ExcelToJson\ExcelToJson\obj\Debug\netcoreapp2.1\ExcelToJson.AssemblyInfo.cs
 C:\Repo\ExcelToJson\ExcelToJson\obj\Debug\netcoreapp2.1\ExcelToJson.dll
 C:\Repo\ExcelToJson\ExcelToJson\obj\Debug\netcoreapp2.1\ExcelToJson.pdb
+C:\Repo\ExcelToJson\bin\Debug\netcoreapp2.1\ExcelToJson.deps.json
+C:\Repo\ExcelToJson\bin\Debug\netcoreapp2.1\ExcelToJson.runtimeconfig.json
+C:\Repo\ExcelToJson\bin\Debug\netcoreapp2.1\ExcelToJson.runtimeconfig.dev.json
+C:\Repo\ExcelToJson\bin\Debug\netcoreapp2.1\ExcelToJson.dll
+C:\Repo\ExcelToJson\bin\Debug\netcoreapp2.1\ExcelToJson.pdb
+C:\Repo\ExcelToJson\obj\Debug\netcoreapp2.1\ExcelToJson.AssemblyInfoInputs.cache
+C:\Repo\ExcelToJson\obj\Debug\netcoreapp2.1\ExcelToJson.AssemblyInfo.cs
+C:\Repo\ExcelToJson\obj\Debug\netcoreapp2.1\ExcelToJson.dll
+C:\Repo\ExcelToJson\obj\Debug\netcoreapp2.1\ExcelToJson.pdb
