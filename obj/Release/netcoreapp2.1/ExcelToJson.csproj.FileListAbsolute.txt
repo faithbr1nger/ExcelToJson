@@ -1,0 +1,10 @@
+C:\Repo\ExcelToJson\ExcelToJson\bin\Release\netcoreapp2.1\ExcelToJson.deps.json
+C:\Repo\ExcelToJson\ExcelToJson\bin\Release\netcoreapp2.1\ExcelToJson.runtimeconfig.json
+C:\Repo\ExcelToJson\ExcelToJson\bin\Release\netcoreapp2.1\ExcelToJson.runtimeconfig.dev.json
+C:\Repo\ExcelToJson\ExcelToJson\bin\Release\netcoreapp2.1\ExcelToJson.dll
+C:\Repo\ExcelToJson\ExcelToJson\bin\Release\netcoreapp2.1\ExcelToJson.pdb
+C:\Repo\ExcelToJson\ExcelToJson\obj\Release\netcoreapp2.1\ExcelToJson.csprojAssemblyReference.cache
+C:\Repo\ExcelToJson\ExcelToJson\obj\Release\netcoreapp2.1\ExcelToJson.AssemblyInfoInputs.cache
+C:\Repo\ExcelToJson\ExcelToJson\obj\Release\netcoreapp2.1\ExcelToJson.AssemblyInfo.cs
+C:\Repo\ExcelToJson\ExcelToJson\obj\Release\netcoreapp2.1\ExcelToJson.dll
+C:\Repo\ExcelToJson\ExcelToJson\obj\Release\netcoreapp2.1\ExcelToJson.pdb

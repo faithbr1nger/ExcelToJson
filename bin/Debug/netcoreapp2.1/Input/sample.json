@@ -1,0 +1,61 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "pagerDutyWebhookUri": {
+      "value": "https://events.pagerduty.com/integration/5b8bf5a3881d4b468359531fa758f858/enqueue"
+    },
+    "emailList": {
+      "value": [
+        {
+          "name": "NZME Dev Group",
+          "email": "dotnetdevs@groups.nzme.co.nz"
+        }
+      ]
+    },
+    "actionGroupShortName": {
+      "value": "ACC BO PR  adas"
+    },
+    "applicationName": {
+      "value": "umbraco"
+    },
+    "contextName": {
+      "value": "acc"
+    },
+    "instanceName": {
+      "value": "backoffiasdasdce"
+    },
+    "environment": {
+      "value": "paaar"
+    },
+    "location": {
+      "value": "aaae"
+    },
+    "pingTests": {
+      "value": [
+        {
+          "name": "backoffice-home11123",
+          "syntheticMonitorName": "backoffice-home213123",
+          "enabled": true,
+          "webTestName": "backoffice-home",
+          "webTestId": "A08A5E6E-0FBB-4F6B-9561-AB2EED827A26",
+          "webTestEnabled": "True",
+          "webTestRequestId": "57B05A2D-7D25-4486-9204-E73D1CC6C609",
+          "webTestRequestUrl": "https://edit.theaccnz.com",
+          "webTestExpectedHttpStatusCode": "300",
+          "webTestExpectedText": "xxx",
+          "applicationInsightsResourceName": "z-umbraco-acc-backoffice-ai-ae-asdasdpr",
+          "metricAlert": {
+            "alertName": "backoffice-home",
+            "alertDescription": "The Acc Production backoffice is unasadaasdasdvailable https://edit.theaccnz.com/",
+            "alertSeverity": "2",
+            "enabled": true,
+            "evaluationFrequency": "PT1M",
+            "windowSize": "PT5M",
+            "failedLocationCount": 2
+          }
+        }
+      ]
+    }
+  }
+}
